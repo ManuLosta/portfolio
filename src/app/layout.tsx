@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/util/cn";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Manuel Lostaló",
@@ -14,8 +15,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>{children}</body>
+		<html lang="es">
+			<body className={cn(spaceGrotesk.className, "bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100")}>
+				{children}
+			</body>
 		</html>
 	);
 }
