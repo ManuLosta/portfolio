@@ -59,8 +59,8 @@ export default function TechList() {
 	return (
 		<div className="flex flex-wrap mb-20 gap-3 items-center justify-center mt-5">
 			{
-				techs.map((tech) => (
-					<TechBadge name={tech.name} icon={tech.icon} />
+				techs.map((tech, index) => (
+					<TechBadge key={index} name={tech.name} icon={tech.icon} />
 				))
 			}
 		</div>
