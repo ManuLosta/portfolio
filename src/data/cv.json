@@ -1,0 +1,50 @@
+{
+  "basics": {
+    "name": "Manuel Lostaló",
+    "email": "mlostalom@gmail.com",
+    "phone": "+54 9 11 3383-7591",
+    "location": {
+      "city": "Buenos Aires",
+      "countryCode": "AR",
+      "region": "Buenos Aires"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "manuel-lostalo",
+        "url": "https://www.linkedin.com/in/manuel-lostalo/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ManuLosta",
+        "url": "https://github.com/ManuLosta"
+      },
+      {
+        "network": "X",
+        "username": "LostaManu",
+        "url": "https://x.com/LostaManu"
+      }
+    ],
+    "summary": "I'm a software engineer student at Universidad Austral. I'm interested in web development.",
+    "image": "/me.jpg"
+  },
+  "education": [
+    {
+      "institution": "Universidad Austral",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "",
+      "endDate": "",
+      "location": "Buenos Aires, Argentina"
+    }
+  ],
+  "work": [],
+  "skills": [],
+  "projects": [],
+  "awards": [],
+  "certificates": [],
+  "volunteer": [],
+  "publications": [],
+  "languages": [],
+  "interests": []
+}

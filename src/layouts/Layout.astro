@@ -1,4 +1,5 @@
 ---
+import NavBar from "@/components/navbar";
 import "../styles/global.css";
 ---
 
@@ -11,16 +12,9 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Manuel Lostaló</title>
 	</head>
-	<body>
-		<slot />
-	</body>
+	<body class="max-w-2xl mx-auto px-4 pt-16">
+		<main>
+			<slot />
+		</main>
+		<NavBar client:only="react"  transition:persist='navbar'/>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
