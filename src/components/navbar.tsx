@@ -13,8 +13,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 export default function NavBar() {
   return (
     <TooltipProvider>
-      <div className="fixed inset-x-0 bottom-10 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14">
-        <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
+      <div className="fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom">
+        <div className="fixed bottom-0 inset-x-0 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
         <Dock direction="middle" className="rounded-full">
           {cv.basics.profiles?.map((profile) => {
             const Icon = iconMap[profile.network];
@@ -29,7 +29,7 @@ export default function NavBar() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Icon className="size-6" />
+                      <Icon className="size-4" />
                     </a>
                   </TooltipTrigger>
                   <TooltipContent>{profile.network}</TooltipContent>
