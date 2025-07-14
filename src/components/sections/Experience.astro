@@ -1,0 +1,27 @@
+---
+import cv from "@/data/cv.json";
+import ResumeCard from "@/components/resume-card.astro";
+const experience = cv.work || [];
+
+const formatDate = (date: string) => {
+  const dateObj = new Date(date);
+  const month = dateObj.toLocaleString("default", { month: "short" });
+  const year = dateObj.getFullYear();
+  return `${month} ${year}`;
+};
+---
+<section class="mt-8">
+  <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+  <div class="space-y-4 flex flex-col gap-4">
+    {experience.map((job) => (
+      <ResumeCard
+        logoUrl={job.logoUrl}
+        altText={job.company}
+        title={job.company}
+        subtitle={`${job.position}${job.location ? ` — ${job.location}` : ""}`}
+        period={`${job.startDate ? formatDate(job.startDate) : ""}${job.startDate ? " - " : ""}${job.endDate ? formatDate(job.endDate) : "Present"}`}
+        description={job.summary}
+      />
+    ))}
+  </div>
+</section>

@@ -1,3 +1,8 @@
+---
+import NavBar from "@/components/navbar";
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +10,11 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Manuel Lostaló</title>
 	</head>
-	<body>
-		<slot />
-	</body>
+	<body class="max-w-2xl mx-auto px-6 pt-16">
+		<main class="mb-32">
+			<slot />
+		</main>
+		<NavBar client:only="react"  transition:persist='navbar'/>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

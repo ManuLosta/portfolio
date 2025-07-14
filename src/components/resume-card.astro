@@ -1,0 +1,26 @@
+---
+import ResumeAvatar from "@/components/resume-avatar";
+import { Card, CardHeader } from "@/components/ui/card";
+const { logoUrl, altText, title, subtitle, period, description } = Astro.props;
+---
+<Card className="flex">
+  <div class="flex-none">
+    <ResumeAvatar client:only="react" logoUrl={logoUrl} altText={altText} />
+  </div>
+  <div class="flex-grow ml-4 items-center flex-col group">
+    <CardHeader>
+      <div class="flex items-center justify-between gap-x-2 text-base">
+        <h3 class="inline-flex items-center justify-center font-semibold leading-none">
+          {title}
+        </h3>
+        <div class="text-sm tabular-nums text-muted-foreground text-right">
+          {period}
+        </div>
+      </div>
+      {subtitle && <div class="font-sans text-sm">{subtitle}</div>}
+    </CardHeader>
+    {description && (
+      <div class="mt-2 text-sm text-muted-foreground">{description}</div>
+    )}
+  </div>
+</Card> 
