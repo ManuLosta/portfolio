@@ -1,0 +1,34 @@
+---
+import cv from "@/data/cv.json";
+const education = cv.education || [];
+
+const formatDate = (date: string) => {
+  const dateObj = new Date(date);
+  const month = dateObj.toLocaleString("default", { month: "short" });
+  const year = dateObj.getFullYear();
+  return `${month} ${year}`;
+};
+---
+<section class="mt-8">
+  <h2 class="text-2xl font-semibold mb-4">Education</h2>
+  <ul class="space-y-4">
+    {education.map((edu) => (
+      <li class="flex flex-row justify-between gap-2">
+        <div>
+          <div class="font-bold text-lg">{edu.institution}</div>
+          <div class="text-sm text-muted-foreground">{edu.area} &mdash; {edu.studyType}</div>
+          <div class="text-xs text-muted-foreground">{edu.location}</div>
+        </div>
+        <div>
+          {(edu.startDate || edu.endDate) && (
+            <div class="text-xs text-muted-foreground">
+              {edu.startDate ? formatDate(edu.startDate) : ""} 
+              {edu.startDate ? " - " : ""} 
+              {edu.endDate ? formatDate(edu.endDate) : "Present"}
+            </div>
+          )}
+        </div>
+      </li>
+    ))}
+  </ul>
+</section> 

@@ -1,6 +1,7 @@
 {
   "basics": {
     "name": "Manuel Lostaló",
+    "label": "Software Engineering Student & Web Developer",
     "email": "mlostalom@gmail.com",
     "phone": "+54 9 11 3383-7591",
     "location": {
@@ -11,40 +12,95 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "manuel-lostalo",
-        "url": "https://www.linkedin.com/in/manuel-lostalo/"
+        "url": "https://www.linkedin.com/in/manuel-lostalo"
       },
       {
         "network": "GitHub",
-        "username": "ManuLosta",
         "url": "https://github.com/ManuLosta"
       },
       {
         "network": "X",
-        "username": "LostaManu",
         "url": "https://x.com/LostaManu"
       }
     ],
-    "summary": "I'm a software engineer student at Universidad Austral, interested in web development and open source.",
+    "summary": "Software engineering student passionate about technology and the creation of innovative solutions. With experience in multiple programming languages and technologies, I specialize in developing unique web applications with a strong focus on design and user experience.",
     "image": "/me.jpg"
   },
   "education": [
     {
       "institution": "Universidad Austral",
       "area": "Software Engineering",
-      "studyType": "Bachelor",
-      "startDate": "",
-      "endDate": "",
-      "location": "Buenos Aires, Argentina"
+      "studyType": "Bachelor's Degree",
+      "startDate": "2022-03",
+      "location": "Buenos Aires, Argentina",
+      "gpa": "9.00"
+    },
+    {
+      "institution": "Colegio Labardén",
+      "area": "Natural Sciences",
+      "studyType": "High School",
+      "endDate": "2021-11",
+      "location": "Buenos Aires, Argentina",
+      "gpa": "9.20",
+      "summary": "Graduated with honors. Won the class gold medal for academic excellence and participated in the Argentine Mathematical Olympiad (OMA), reaching the national stage."
     }
   ],
-  "work": [],
-  "skills": [],
-  "projects": [],
-  "awards": [],
-  "certificates": [],
-  "volunteer": [],
-  "publications": [],
-  "languages": [],
-  "interests": []
+  "work": [
+    {
+      "company": "Aspen Skiing Company",
+      "position": "Recreational Activities Assistant",
+      "startDate": "2024-12",
+      "endDate": "2025-03",
+      "location": "Snowmass Village, Colorado",
+      "summary": "Developed communication and customer service skills by interacting daily with guests from different cultures. Improved my English proficiency while coordinating recreational activities in an English-speaking environment."
+    },
+    {
+      "company": "Colegio Labardén",
+      "position": "Math Olympiad Coach",
+      "startDate": "2023-03",
+      "endDate": "2023-11",
+      "location": "Buenos Aires, Argentina",
+      "summary": "Designed and implemented dynamic lesson plans to prepare students for the Argentine Mathematical Olympiad (OMA), fostering critical thinking and problem-solving skills."
+    }
+  ],
+  "projects": [
+    {
+      "name": "ScholarSync",
+      "startDate": "2023-03",
+      "endDate": "2023-08",
+      "description": "A collaborative web app developed for a university course. It allows high school and college students to ask and answer questions, rewarding helpfulness and promoting peer learning.",
+      "url": "https://github.com/ManuLosta/scholarsync",
+      "highlights": [
+        "Built with Spring, Java, ReactJS, Docker, PostgreSQL"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages & Tools",
+      "keywords": [
+        "Java",
+        "Kotlin",
+        "Python",
+        "SQL",
+        "Linux",
+        "Rust",
+        "Haskell",
+        "Docker",
+        "JavaScript",
+        "ReactJS",
+        "Spring"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "B2 First Certificate (173/190)"
+    }
+  ]
 }
