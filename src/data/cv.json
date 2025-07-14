@@ -33,7 +33,8 @@
       "studyType": "Bachelor's Degree",
       "startDate": "2022-03",
       "location": "Buenos Aires, Argentina",
-      "gpa": "9.00"
+      "gpa": "9.00",
+      "logoUrl": "/logos/austral.jpg"
     },
     {
       "institution": "Colegio Labardén",
@@ -42,7 +43,8 @@
       "endDate": "2021-11",
       "location": "Buenos Aires, Argentina",
       "gpa": "9.20",
-      "summary": "Graduated with honors. Won the class gold medal for academic excellence and participated in the Argentine Mathematical Olympiad (OMA), reaching the national stage."
+      "summary": "Graduated with honors. Won the class gold medal for academic excellence and participated in the Argentine Mathematical Olympiad (OMA), reaching the national stage.",
+      "logoUrl": "/logos/labarden.jpg"
     }
   ],
   "work": [
@@ -52,7 +54,8 @@
       "startDate": "2024-12",
       "endDate": "2025-03",
       "location": "Snowmass Village, Colorado",
-      "summary": "Developed communication and customer service skills by interacting daily with guests from different cultures. Improved my English proficiency while coordinating recreational activities in an English-speaking environment."
+      "summary": "Developed communication and customer service skills by interacting daily with guests from different cultures. Improved my English proficiency while coordinating recreational activities in an English-speaking environment.",
+      "logoUrl": "/logos/snowmass.png"
     },
     {
       "company": "Colegio Labardén",
@@ -60,7 +63,8 @@
       "startDate": "2023-03",
       "endDate": "2023-11",
       "location": "Buenos Aires, Argentina",
-      "summary": "Designed and implemented dynamic lesson plans to prepare students for the Argentine Mathematical Olympiad (OMA), fostering critical thinking and problem-solving skills."
+      "summary": "Designed and implemented dynamic lesson plans to prepare students for the Argentine Mathematical Olympiad (OMA), fostering critical thinking and problem-solving skills.",
+      "logoUrl": "/logos/labarden.jpg"
     }
   ],
   "projects": [

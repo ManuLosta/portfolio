@@ -1,5 +1,6 @@
 ---
 import cv from "@/data/cv.json";
+import ResumeCard from "@/components/resume-card.astro";
 const education = cv.education || [];
 
 const formatDate = (date: string) => {
@@ -11,24 +12,16 @@ const formatDate = (date: string) => {
 ---
 <section class="mt-8">
   <h2 class="text-2xl font-semibold mb-4">Education</h2>
-  <ul class="space-y-4">
+  <div class="space-y-4 flex flex-col gap-4">
     {education.map((edu) => (
-      <li class="flex flex-row justify-between gap-2">
-        <div>
-          <div class="font-bold text-lg">{edu.institution}</div>
-          <div class="text-sm text-muted-foreground">{edu.area} &mdash; {edu.studyType}</div>
-          <div class="text-xs text-muted-foreground">{edu.location}</div>
-        </div>
-        <div>
-          {(edu.startDate || edu.endDate) && (
-            <div class="text-xs text-muted-foreground">
-              {edu.startDate ? formatDate(edu.startDate) : ""} 
-              {edu.startDate ? " - " : ""} 
-              {edu.endDate ? formatDate(edu.endDate) : "Present"}
-            </div>
-          )}
-        </div>
-      </li>
+      <ResumeCard
+        logoUrl={edu.logoUrl}
+        altText={edu.institution}
+        title={edu.institution}
+        subtitle={`${edu.area} — ${edu.studyType}${edu.location ? ` — ${edu.location}` : ""}`}
+        period={`${edu.startDate ? formatDate(edu.startDate) : ""}${edu.startDate ? " - " : ""}${edu.endDate ? formatDate(edu.endDate) : "Present"}`}
+        description={edu.summary}
+      />
     ))}
-  </ul>
+  </div>
 </section> 
